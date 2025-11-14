@@ -1,74 +1,73 @@
-/*body features*/
-body{
-    margin:0%;
-    font-family: 'Times New Roman', Times, serif;
-    background: white;
-    color: black;
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f5f7fa;
+    color: #333;
 }
-/*headings features*/
-h1{
-    margin:0%;
+
+h1, h2, h3 {
+    margin: 0;
+    color: #1a1a1a;
 }
-h2{
-    margin:0%;
-}
-h3{
-    margin:0%;
-}
-.site-header,.site-footer {
-    text-align:center;
+
+.site-header, .site-footer {
+    text-align: center;
     padding: 1.5rem;
-    background: aqua;
-    color:black;
-
-
+    background: #4b6bfb;
+    color: white;
 }
-.container{
+
+.container {
     display: grid;
-    gap:2rem;
-    padding:1.5rem;
+    gap: 2rem;
+    padding: 1.5rem;
     max-width: 900px;
-    margin:auto;
-    background: antiquewhite;
-}
-/*For main banner section*/
-.hero{ 
-    padding:1.5rem;
-    background:antiquewhite;
+    margin: auto;
+    background: #ffffff;
     border-radius: 10px;
-    text-align:center;
-    transition: box-shadow 0.3s;
-}
-.hero:hover {
-    box-shadow: 0 4px 12px black;
 }
 
-/* for features */
+.hero { 
+    padding: 1.5rem;
+    background: #d0e8ff;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 .features {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
+
 .feature-card {
     flex: 1 1 250px;
     padding: 1rem;
-    background: white;
+    background: #fffae5;
     border-radius: 10px;
     text-align: center;
-      /*  zoom on hover */
-    transition: transform 0.3s;
-    background: goldenrod;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .feature-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
+
 .form-section {
-    background: white;
+    background: #ffffff;
     padding: 1.5rem;
     border-radius: 10px;
-
-    /*  glow on focus */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -79,10 +78,13 @@ input, select, textarea {
     padding: 0.6rem;
     border-radius: 8px;
     border: 1px solid #ccc;
+    transition: all 0.3s;
 }
 
 input:focus, select:focus, textarea:focus {
-    outline: 2px solid #4b6bfb;
+    outline: none;
+    border: 2px solid #4b6bfb;
+    box-shadow: 0 0 8px rgba(75, 107, 251, 0.5);
 }
 
 button {
@@ -92,26 +94,34 @@ button {
     background: #4b6bfb;
     color: white;
     cursor: pointer;
-    font-size: 1rem;
-
-    transition: background 0.3s;
+    transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
 }
+
 button:hover {
     background: #3651c9;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* RESPONSIVE BREAKPOINTS */
-@media (min-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
+@media (min-width: 600px) and (max-width: 899px) {
+    .features {
+        flex-direction: row;
+        gap: 1rem;
     }
 }
 
 @media (min-width: 900px) {
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
     .features {
         justify-content: space-between;
     }
 }
+
+
+
 
 
 
