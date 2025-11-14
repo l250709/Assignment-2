@@ -1,0 +1,85 @@
+<html lang="en"><!-- Language for the website -->
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>AI Tutor 2025</title><!-- Title -->
+    <link rel="stylesheet" href="style.css"><!-- Referencing CSS file -->
+</head>
+    
+<body>
+    <header class="site-header">
+        <h1>AI Tutor 2025</h1><!-- Title displayed on the webpage -->
+        <p>Here to support you in your endeavours</p> <!-- Subtitle / tagline -->
+    </header>
+
+    <div class="container">
+        <!-- main section -->
+        <section class="hero">
+            <h2>Learn smarter, not harder</h2> <!-- main heading -->
+            <p>Learn with AI to increase your grades exponentially</p> <!-- main description -->
+        </section>
+
+        <!-- Features section -->
+        <section class="features">
+            <div class="feature-card">
+                <h3>Adaptive Learning</h3>
+                <p>Gets easier or harder based on how you perform.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Instant Answers</h3>
+                <p>Get explanations anytime, anywhere.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Progress Tracking</h3>
+                <p>Monitor strengths and weaknesses.</p>
+            </div>
+        </section>
+
+        <!-- SIGNUP HEADER -->
+        <section class="signup-header">
+            <h3>Sign up Today</h3> <!-- Form section header -->
+        </section>
+
+        <!-- FORM SECTION -->
+        <section class="form-section">
+            <form>
+                <!-- Name input -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email input -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Subjects checkboxes -->
+                <p class="label-title">Subjects You're Interested In:</p>
+                <label><input type="checkbox" name="subject" value="mathematics"> Mathematics</label>
+                <label><input type="checkbox" name="subject" value="physics"> Physics</label>
+                <label><input type="checkbox" name="subject" value="cs"> Computer Science</label>
+
+                <!-- Plan radio buttons -->
+                <p class="label-title">Choose Your Plan:</p>
+                <label><input type="radio" name="plan" value="basic"> Basic</label>
+                <label><input type="radio" name="plan" value="premium"> Premium</label>
+
+                <!-- Learning level dropdown -->
+                <label for="level">Your Learning Level</label>
+                <select id="level" name="level">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+
+                <!-- Goal textarea -->
+                <label for="message">Tell Us Your Goal</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <!-- Submit button -->
+                <button type="submit">Join Now</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
