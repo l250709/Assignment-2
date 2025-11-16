@@ -18,6 +18,6 @@ i used svg icons to give the website identity.
 
 ## Validator Check
 ### HTML Validation
-![HTML Validator](assets/validatorhtml.png)
+![HTML Validator](assets/validator html.png)
 ### CSS Validation
-![CSS Validator](assets/validatorcss.png)
+![CSS Validator](assets/validator css.png)
