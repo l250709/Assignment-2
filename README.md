@@ -9,4 +9,15 @@ Flexbox is used inside the features section to make the cards responsive
 To increase interactivity i added hover effects on the feature cards,a glow effect on the input lines in the form and a shadow effect on the hero section when hovered.
 i used svg icons to give the website identity.
 
-##Screenshots
+## Screenshots
+### Mobile View
+![Mobile Screenshot](assets/mobile.jpeg)
+
+### Desktop View
+![Desktop Screenshot](assets/desktop.png)
+
+## Validator Check
+### HTML Validation
+![HTML Validator](assets/validatorhtml.png)
+### CSS Validation
+![CSS Validator](assets/validatorcss.png)
